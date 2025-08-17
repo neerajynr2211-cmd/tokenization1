@@ -3,4 +3,4 @@ nltk
 pandas
 numpy
 punkt
-stopwords
+
