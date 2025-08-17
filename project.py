@@ -1,13 +1,13 @@
 import nltk
-nltk.download('punkt')
 from nltk.tokenize import word_tokenize
 import streamlit as st
 import pandas as pd
-try:
-    nltk.data.find("tokenizers/punkt")
-except LookupError:
-    nltk.download("punkt")
-
+for resource in ["punkt", "punkt_tab", "stopwords"]:
+    try:
+        path = resource if resource != "stopwords" else f"corpora/{resource}"
+        nltk.data.find(path)
+    except LookupError:
+        nltk.download(resource)
 with st.sidebar.chat_message("ai",avatar="🎨"):
      st.write("Themes")
 with st.chat_message("ai"):
@@ -158,5 +158,6 @@ if about:
 
 
 st.subheader("Made by Nk")
+
 
 
