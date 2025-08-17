@@ -2,6 +2,10 @@ import nltk
 from nltk.tokenize import word_tokenize
 import streamlit as st
 import pandas as pd
+try:
+    nltk.data.find("tokenizers/punkt")
+except LookupError:
+    nltk.download("punkt")
 
 with st.sidebar.chat_message("ai",avatar="🎨"):
      st.write("Themes")
@@ -153,3 +157,4 @@ if about:
 
 
 st.subheader("Made by Nk")
+
