@@ -2,7 +2,6 @@ import nltk
 from nltk.tokenize import word_tokenize
 import streamlit as st
 import pandas as pd
-import emoji
 
 with st.sidebar.chat_message("ai",avatar="🎨"):
      st.write("Themes")
@@ -151,5 +150,6 @@ if about:
      sentiment analysis
                          
      Text summarization""")
+
 
 st.subheader("Made by Nk")
