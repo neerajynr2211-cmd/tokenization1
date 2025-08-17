@@ -1,3 +1,4 @@
 punkt
-punk_tab
+punkt_tab
 stopwords
+
