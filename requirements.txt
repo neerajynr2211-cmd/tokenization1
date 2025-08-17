@@ -2,3 +2,5 @@ streamlit
 nltk
 pandas
 numpy
+punkt
+stopwords
