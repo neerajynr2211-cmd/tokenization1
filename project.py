@@ -1,4 +1,5 @@
 import nltk
+nltk.download('punkt')
 from nltk.tokenize import word_tokenize
 import streamlit as st
 import pandas as pd
@@ -157,4 +158,5 @@ if about:
 
 
 st.subheader("Made by Nk")
+
 
