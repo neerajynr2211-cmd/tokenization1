@@ -141,21 +141,7 @@ st.sidebar.write(f"Current theme: **{mode.capitalize()} Mode**")
 about = st.sidebar.button("ℹ️About") 
 
 if about:
-    
-    st.sidebar.write(" 1. Word tokenization is the process of splitting text into individual units called tokens (usually words).")
-    col1,col2 =st.sidebar.columns(2)
-    with col1:
-     st.sidebar.write("""2. Why Tokenization Matters
-     Explain real-world use cases:
-
-     Search engines
-             
-     Chatbots
-                         
-     sentiment analysis
-                         
-     Text summarization""")
-      st.subheader("About Word Tokenization")
+    st.subheader("About Word Tokenization")
     st.write(" 1. Word tokenization is the process of splitting text into individual units called tokens (usually words).")
     col1,col2,col3 =st.columns(3)
     with col1:
@@ -185,6 +171,7 @@ Visualize tokens(Frequency)""")
          st.write(str(tokens))      
     st.write("Thanks for using")
     st.write("Made by Nk")
+
 
 
 
