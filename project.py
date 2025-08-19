@@ -183,11 +183,11 @@ Visualize tokens(Frequency)""")
          st.subheader("Example")
          st.write("I love building NLP apps with Streamlit!") 
          st.write(str(tokens))      
-    st.subheader("Thanks for using")
+    st.write("Thanks for using")
     st.write("Made by Nk")
 
 
-    st.write("Made by Nk")
+
 
 
 
