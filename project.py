@@ -155,9 +155,40 @@ if about:
      sentiment analysis
                          
      Text summarization""")
+      st.subheader("About Word Tokenization")
+    st.write(" 1. Word tokenization is the process of splitting text into individual units called tokens (usually words).")
+    col1,col2,col3 =st.columns(3)
+    with col1:
+     st.write("""2. Why Tokenization Matters
+     Explain real-world use cases:
+
+     Search engines
+             
+     Chatbots
+                         
+     sentiment analysis
+                         
+     Text summarization""")
+     with col2:
+         st.subheader("Features")
+         st.write("""Tokenize sentences into words   
+         
+Display word counts                  
+        
+Visualize tokens(Frequency)""")
+
+     with col3:
+         tokens = [ "I",  "love",  "building",  "NLP",  "apps",  "with",  "Streamlit", "!"]
+
+         st.subheader("Example")
+         st.write("I love building NLP apps with Streamlit!") 
+         st.write(str(tokens))      
+    st.subheader("Thanks for using")
+    st.write("Made by Nk")
 
 
-st.subheader("Made by Nk")
+    st.write("Made by Nk")
+
 
 
 
