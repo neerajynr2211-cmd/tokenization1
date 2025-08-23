@@ -42,8 +42,8 @@ if st.button("Tokenize",):
 mode =st.sidebar.selectbox("Choose Theme",["Midnight ocean","Purple Galaxy","Light","Dark"])
 if mode == "Purple Galaxy":
      with col:
-        st.markdown(f"""
-        <div class="galaxy-card">
+        st.markdown("""
+     <div class="galaxy-card">
             <div class="galaxy-title">{title}</div>
             <div class="galaxy-sub">{sub}</div>
             <div style="height:120px;margin-top:10px;border-radius:14px;background:
@@ -181,6 +181,7 @@ Visualize tokens(Frequency)""")
          st.write(str(tokens))      
     st.write("Thanks for using")
     st.write("Made by Nk")
+
 
 
 
