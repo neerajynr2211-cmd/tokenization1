@@ -145,6 +145,15 @@ if about:
     st.write(" 1. Word tokenization is the process of splitting text into individual units called tokens (usually words).")
     col1,col2,col3 =st.columns(3)
     with col1:
+        st.markdown(f"""
+        <div class="galaxy-card">
+            <div class="galaxy-title">{title}</div>
+            <div class="galaxy-sub">{sub}</div>
+            <div style="height:120px;margin-top:10px;border-radius:14px;background:
+                radial-gradient(800px 300px at -10% -30%, rgba(168,85,247,.25), transparent 60%),
+                linear-gradient(180deg, rgba(24,16,45,.75), rgba(17,12,33,.9));"></div>
+        </div>
+        """, unsafe_allow_html=True)
      st.write("""2. Why Tokenization Matters
      Explain real-world use cases:
 
@@ -171,6 +180,7 @@ Visualize tokens(Frequency)""")
          st.write(str(tokens))      
     st.write("Thanks for using")
     st.write("Made by Nk")
+
 
 
 
